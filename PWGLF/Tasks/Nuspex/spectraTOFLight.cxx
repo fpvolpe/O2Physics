@@ -861,7 +861,7 @@ struct SpectraTOFLight {
     }
 
     const auto& mcCollision = collision.mcCollision_as<GenMCCollisions>();
-    const float multiplicity = getMultiplicity(mcCollision);
+    const float multiplicity = getMultiplicityMC(mcCollision);
 
     if (mcParticle.pdgCode() != PDGs[i]) {
       return;
